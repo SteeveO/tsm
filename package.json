@@ -1,0 +1,31 @@
+{
+  "name": "tsm",
+  "version": "1.0.0",
+  "description": "Simple API solving the Traveling Salesman Problem for a technical assignment",
+  "main": "index.js",
+  "author": "Steeve Aubert",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon --experimental-modules index.mjs",
+    "lint": "eslint ./*.mjs ./config/*.mjs server/*/*.mjs --fix",
+    "precommint": "yarn lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "express-validation": "^1.0.2",
+    "joi": "^14.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7"
+  }
+}
